@@ -1,0 +1,20 @@
+:root {
+	--primary-color: #062863;
+	--primary-color-light: #083e9e;
+	--primary-color-lighter: #1f50a7;
+	--secondary-color: #4a5568;
+	--secondary-color-light: #9fa3aa;
+	--white: #fff;
+	--almost-white: #edf2f7;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
