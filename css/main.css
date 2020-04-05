@@ -23,12 +23,6 @@ body {
 	font-size: 1.3rem;
 	overflow-x: hidden;
 	background-color: var(--primary-color);
-	background-image: url('../images/circle.png'), url('../images/Inverted\ J.png'),
-		url('../images/J.png'), url('../images/angle\ bracket.png');
-	background-position: -1% -15%,  108% -1%, -5% 108%, 107% 105%;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: 21rem 21rem;
 }
 
 header img {
@@ -36,3 +30,91 @@ header img {
 	width: 17rem;
 }
 
+main {
+	margin: 0 2%;
+}
+
+/* utility classes */
+.text-center {
+	text-align: center;
+}
+
+form {
+	margin: 0 auto;
+	padding: 0 4rem;
+	max-width: 44.8rem;
+	background-color: var(--white);
+	border-radius: 2rem 2rem 2rem 0;
+}
+form .form-info {
+	padding: 3rem 0;
+}
+
+.form-info > p {
+	padding: 0.2rem;
+	color: var(--secondary-color);
+}
+
+form h2 {
+	color: var(--primary-color-lighter);
+}
+form label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 0.6rem;
+	color: var(--secondary-color);
+	font-size: 1.2rem;
+}
+
+form input{
+	height: 4.2rem;
+	width: 100%;
+	padding: 0 0.7rem;
+	background-color: var(--almost-white);
+	font-family: inherit;
+	border: none;
+	border-radius: 0.3rem;
+}
+
+.form-control {
+	margin-bottom: 3rem;
+}
+
+input[type='submit'] {
+	margin-bottom: 3rem;
+	background-color: var(--primary-color-light);
+	color: var(--white);
+	font-weight: bold;
+	height: 5rem;
+	border-radius: 1rem 1rem 1rem 0;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in;
+}
+
+input[type='submit']:hover {
+	background-color: var(--primary-color);
+}
+
+
+footer a {
+   display: inline-block;
+   margin: 1.2rem 0;
+	text-decoration: none;
+	color: var(--white);
+}
+
+footer a:hover {
+	color: var(--secondary-color-light);
+}
+
+@media only screen and (min-width: 900px) {
+	body {
+		background-image: url('../images/circle.png'),
+			url('../images/Inverted\ J.png'), url('../images/J.png'),
+			url('../images/angle\ bracket.png');
+		background-position: -1% -15%, 108% -1%, -5% 108%, 107% 105%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 21rem 21rem;
+	}
+}
